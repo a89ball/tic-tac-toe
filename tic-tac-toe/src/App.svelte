@@ -10,8 +10,18 @@
 
 		<p>May the best man win. Good luck {playerOne} and {playerTwo}</p>
 	</section>
+	<section class="container">
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+		<div class="tile"></div>
+	</section>
 
-	
 </main>
 
 <style>
