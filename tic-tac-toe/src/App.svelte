@@ -1,10 +1,17 @@
 <script>
-	
+	export let playerOne;
+	export let playerTwo;
 </script>
 
 <main>
-	<h1>Tic Tac Toe</h1>
-	<p> May the best man win.</p>
+	<section>
+		<h1>Tic Tac Toe</h1>
+		<p>Please enter your names</p>
+
+		<p>May the best man win. Good luck {playerOne} and {playerTwo}</p>
+	</section>
+
+	
 </main>
 
 <style>
