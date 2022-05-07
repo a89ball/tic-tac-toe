@@ -4,6 +4,11 @@ html, body {
 	height: 100%;
 }
 
+.background {
+	background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+}
 body {
 	color: #333;
 	margin: 0;
