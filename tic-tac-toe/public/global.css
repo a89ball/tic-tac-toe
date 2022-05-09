@@ -29,6 +29,27 @@ html, body {
 .player2 {
     color: #df0505;
 }
+
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#reset{
+	background-color: red;
+	color:antiquewhite;
+	padding: 8px;
+	border-radius: 8px;
+	border: none;
+	font-size: 20px;
+	margin-left: 1em;
+	cursor: pointer;
+
+}
 body {
 	color: #333;
 	margin: 0;

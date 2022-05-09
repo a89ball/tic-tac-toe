@@ -21,7 +21,12 @@
 		<div class="tile"></div>
 		<div class="tile"></div>
 	</section>
+<section class = "announcer hide">
 
+</section>
+<section class="controls">
+	<button id ="reset">Reset</button>
+</section>
 </main>
 
 <style>
