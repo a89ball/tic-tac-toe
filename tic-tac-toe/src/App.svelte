@@ -70,6 +70,20 @@
 			}
 			announcer.classList.remove("hide");
 
+			//If statement that checks if the action made by player is valid. if valid, it's falsey if invalid it's truthy
+
+			const isValidAction = (tile) => {
+				if (tile.innerText === "X" || tile.innerText === "O") {
+					return false;
+				}
+
+				return true;
+			};
+
+			const updateBoard = (index) => {
+				board[index] = currentPlayer;
+			};
+
 			const changePlayer = () => {
 				playerDisplay.classList.remove(`player${currentPlayer}`);
 				currentPlayer = currentPlayer === "X" ? "O" : "X";
