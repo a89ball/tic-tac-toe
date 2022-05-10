@@ -26,7 +26,27 @@
 			[2, 4, 6],
 		];
 
+		// Using a switch statement in order to announce the outcome of the game
 
+		const announce = (type) => {
+        switch(type){
+            case PLAYER2_WON:
+                announcer.innerHTML = 'Player <span class="player1">O</span> Won';
+                break;
+            case PLAYER1_WON:
+                announcer.innerHTML = 'Player <span class="player2">X</span> Won';
+                break;
+            case TIE:
+                announcer.innerText = 'Tie';
+        }
+        announcer.classList.remove('hide');
+
+		const changePlayer = () => {
+			playerDisplay.classList.remove(`player${currentPlayer}`);
+			currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+			playerDisplay.innerText = currentPlayer;
+			playerDisplay.classList.add(`player${currentPlayer}`); 
+		}
 		// If both conditions are true, current player will be given a turn and the game continues
 		const userAction = (tile, index) => {
 			if (isValidAction(tile) && isGameRunning) {
@@ -37,6 +57,10 @@
 				changePlayer();
 			}
 		};
+
+	}
+
+
 	});
 </script>
 
@@ -57,13 +81,6 @@
 		<div class="tile" />
 		<div class="tile" />
 		<div class="tile" />
-
-		{#if roundWon 
-		announce(currentPlayer === 'X' ? PLAYER1_WON : PLAYER2_WON);
-		isGameActive = false;
-		return;
-		}
-	{/if}
 	</section>
 	<section class="announcer hide" />
 	<section class="controls">
@@ -86,7 +103,6 @@
 		font-size: 4em;
 		font-weight: 100;
 	}
-
 
 	@media (min-width: 640px) {
 		main {
