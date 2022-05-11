@@ -46,13 +46,14 @@
 				);
 				if (check) {
 					highlightTiles(combination);
-					alert(currentPlayer + " has won");
+					alert(currentPlayer + " has won, press Reset button to restart the game");
+					
 				}
 
 			
 			});
 
-
+			
 		}
 
 		function highlightTiles(combination) {
@@ -70,6 +71,8 @@
 		});
 
 
+
+
 		//let flag = false;
 
 		//checkForWinner = () => {
@@ -82,10 +85,11 @@
 		//tiles.forEach((tile) => {
 		//if (flag) {
 		//	return;
-		//if the player has won, then return..
+				
+		
 		//	else {
 		//	tile.innerHTML = currentPlayer;
-
+//
 		//	checkForWinner(); // before that create winning combinations..
 
 		//	currentPlayer =
@@ -93,6 +97,7 @@
 		//? "O"
 		//: "X";
 		//	}
+		
 		//});
 	});
 </script>
@@ -141,8 +146,8 @@
 		<div class="scoreboard">
 			<div class="socreboard__name">{playerOne}</div>
 			<div class="socreboard__name">{playerTwo}</div>
-			<div class="socreboard__score">0</div>
-			<div class="socreboard__score">0</div>
+			<div id="socreboard__scoreX">0</div>
+			<div id="socreboard__scoreO">2</div>
 		</div>
 	</section>
 </main>
