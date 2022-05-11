@@ -22,6 +22,11 @@ html, body {
     cursor: pointer;
 }
 
+
+.tile.highlight{
+	background-color: darkorange;
+}
+
 .player1 {
     color: #0de102;
 }
@@ -37,6 +42,20 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+}
+
+.controls button {
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
 }
 
 #reset{
@@ -106,4 +125,9 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
+}
+
+.scoreboard {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
