@@ -44,6 +44,6 @@
   for more information about the license, click on the link below.
   - [License](https://opensource.org/licensesMIT)
   ## Questions:
-    For Questions about the ReadMe Generator you can visit my GitHub page at the following link:
+    For Questions about the game you can visit my GitHub page at the following link:
     - [GitHub profile](https://github.com/a89ball)
     For additional questions please reach out to my email at: abdifatah.101@outlook.com.
