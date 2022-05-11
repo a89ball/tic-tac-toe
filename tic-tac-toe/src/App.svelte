@@ -138,8 +138,7 @@
 	<section class="controls">
 		<button
 			id="reset"
-			onclick="document.getElementByClass(
-		 'tile').value = ''">Reset</button
+			onclick="window.location.reload();">Reset</button
 		>
 	</section>
 	<section>

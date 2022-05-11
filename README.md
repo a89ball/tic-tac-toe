@@ -17,6 +17,18 @@
 
     The app is still a working in progress and some of the updates to be expected are as follows:
 
+    IF game ends in draw
+    THEN alert appears on the browser announcing a draw
+
+    IF player one and player two type their names in their respective inputs
+    THEN scoreboard at the bottom of the screen updates with their names
+
+    IF player one or player two win a round
+    THEN the scoreboard increments by one
+
+    IF the reset button is pushed
+    THEN the game resets without reloading the page, keeping the scorelines
+
      
   ## Installation:
   Svelte
